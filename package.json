@@ -1,0 +1,42 @@
+{
+  "name": "lab3-incidents-api",
+  "version": "1.0.0",
+  "description": "API para manejo de incidentes con Prisma ORM y PostgreSQL",
+  "main": "src/server/app.js",
+  "scripts": {
+    "dev": "node src/server/app.js",
+    "start": "node src/server/app.js",
+    "client": "node src/client/examples/clientExample.js",
+    "db:generate": "npx prisma generate",
+    "db:pull": "npx prisma db pull",
+    "db:push": "npx prisma db push",
+    "db:studio": "npx prisma studio",
+    "db:reset": "npx prisma db push --force-reset",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "chmod +x setup.sh && ./setup.sh"
+  },
+  "keywords": [
+    "prisma",
+    "postgresql",
+    "express",
+    "api",
+    "incidents",
+    "orm"
+  ],
+  "author": "Mario Rocha",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.8.2",
+    "prisma": "^6.8.2",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
